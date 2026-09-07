@@ -154,7 +154,8 @@
           "line-height": "14px",
           "font-weight": "400"
         }
-      }
+      },
+      "registryDependencies": []
     },
     {
       "name": "button",
@@ -318,7 +319,7 @@
         "cn"
       ],
       "registryDependencies": [
-        "button"
+        "@nuera/button"
       ],
       "files": [
         {
@@ -366,7 +367,7 @@
         "cn"
       ],
       "registryDependencies": [
-        "button"
+        "@nuera/button"
       ],
       "files": [
         {
@@ -398,8 +399,8 @@
         "cn"
       ],
       "registryDependencies": [
-        "label",
-        "separator"
+        "@nuera/label",
+        "@nuera/separator"
       ],
       "files": [
         {
@@ -471,27 +472,27 @@
       "type": "registry:item",
       "description": "Every nuera-ui component at once.",
       "registryDependencies": [
-        "nuera-theme",
-        "button",
-        "badge",
-        "avatar",
-        "input",
-        "select",
-        "checkbox",
-        "switch",
-        "tabs",
-        "table",
-        "dropdown-menu",
-        "dialog",
-        "sheet",
-        "sonner",
-        "pagination",
-        "label",
-        "field",
-        "card",
-        "separator",
-        "tooltip",
-        "skeleton"
+        "@nuera/nuera-theme",
+        "@nuera/button",
+        "@nuera/badge",
+        "@nuera/avatar",
+        "@nuera/input",
+        "@nuera/select",
+        "@nuera/checkbox",
+        "@nuera/switch",
+        "@nuera/tabs",
+        "@nuera/table",
+        "@nuera/dropdown-menu",
+        "@nuera/dialog",
+        "@nuera/sheet",
+        "@nuera/sonner",
+        "@nuera/pagination",
+        "@nuera/label",
+        "@nuera/field",
+        "@nuera/card",
+        "@nuera/separator",
+        "@nuera/tooltip",
+        "@nuera/skeleton"
       ]
     }
   ]

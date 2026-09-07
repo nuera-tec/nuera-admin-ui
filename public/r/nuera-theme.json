@@ -7,6 +7,7 @@
     "@fontsource-variable/noto-sans-tc",
     "tw-animate-css"
   ],
+  "registryDependencies": [],
   "cssVars": {
     "theme": {
       "font-sans": "'Noto Sans TC Variable', 'Noto Sans TC', system-ui, sans-serif"

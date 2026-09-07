@@ -6,8 +6,8 @@
     "cn"
   ],
   "registryDependencies": [
-    "label",
-    "separator"
+    "@nuera/label",
+    "@nuera/separator"
   ],
   "files": [
     {
