@@ -1,0 +1,177 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/noto-sans-tc";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-heading: var(--font-sans);
+    --font-sans: 'Noto Sans TC Variable', 'Noto Sans TC', system-ui, sans-serif;
+    --color-sidebar-ring: var(--sidebar-ring);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar: var(--sidebar);
+    --color-chart-5: var(--chart-5);
+    --color-chart-4: var(--chart-4);
+    --color-chart-3: var(--chart-3);
+    --color-chart-2: var(--chart-2);
+    --color-chart-1: var(--chart-1);
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-popover: var(--popover);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+    --color-primary-soft: var(--primary-soft);
+    --color-primary-soft-foreground: var(--primary-soft-foreground);
+    --color-destructive-foreground: var(--destructive-foreground);
+    --color-destructive-soft: var(--destructive-soft);
+    --color-success: var(--success);
+    --color-success-soft: var(--success-soft);
+    --color-warning: var(--warning);
+    --color-warning-soft: var(--warning-soft);
+    --color-brand: var(--brand);
+    --color-brand-soft: var(--brand-soft);
+    --color-link: var(--link);
+    --radius-sm: calc(var(--radius) * 0.6);
+    --radius-md: calc(var(--radius) * 0.8);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) * 1.4);
+    --radius-2xl: calc(var(--radius) * 1.8);
+    --radius-3xl: calc(var(--radius) * 2.2);
+    --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+    /* Values mirror the Figma "Color" collection (Light mode) of 創紀後台. */
+    --background: #f8fafc;
+    --foreground: #0f172a;
+    --card: #ffffff;
+    --card-foreground: #0f172a;
+    --popover: #ffffff;
+    --popover-foreground: #0f172a;
+    --primary: #3b61f7;
+    --primary-foreground: #ffffff;
+    --primary-soft: #f0f3fe;
+    --primary-soft-foreground: #0a39f5;
+    --secondary: #f1f5f9;
+    --secondary-foreground: #0f172a;
+    --muted: #f1f5f9;
+    --muted-foreground: #64748b;
+    --accent: #f1f5f9;
+    --accent-foreground: #0f172a;
+    --destructive: #dc2626;
+    --destructive-foreground: #ffffff;
+    --destructive-soft: #fef2f2;
+    --success: #16a34a;
+    --success-soft: #f0fdf4;
+    --warning: #d97706;
+    --warning-soft: #fffbeb;
+    --brand: #00baef;
+    --brand-soft: #f0fbff;
+    --link: #3b61f7;
+    --border: #e2e8f0;
+    --input: #e2e8f0;
+    --ring: #7b94f9;
+    --chart-1: #3b61f7;
+    --chart-2: #00baef;
+    --chart-3: #22c55e;
+    --chart-4: #f59e0b;
+    --chart-5: #ef4444;
+    --radius: 0.625rem;
+    --sidebar: #ffffff;
+    --sidebar-foreground: #334155;
+    --sidebar-primary: #3b61f7;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #f0f3fe;
+    --sidebar-accent-foreground: #0a39f5;
+    --sidebar-border: #e2e8f0;
+    --sidebar-ring: #7b94f9;
+}
+
+.dark {
+    --background: #020617;
+    --foreground: #f8fafc;
+    --card: #0f172a;
+    --card-foreground: #f8fafc;
+    --popover: #0f172a;
+    --popover-foreground: #f8fafc;
+    --primary: #5978f8;
+    --primary-foreground: #ffffff;
+    --primary-soft: #041762;
+    --primary-soft-foreground: #a2b4fb;
+    --secondary: #1e293b;
+    --secondary-foreground: #f8fafc;
+    --muted: #1e293b;
+    --muted-foreground: #94a3b8;
+    --accent: #1e293b;
+    --accent-foreground: #f8fafc;
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+    --destructive-soft: #450a0a;
+    --success: #22c55e;
+    --success-soft: #14532d;
+    --warning: #f59e0b;
+    --warning-soft: #78350f;
+    --brand: #29c6ff;
+    --brand-soft: #005270;
+    --link: #7b94f9;
+    --border: rgb(255 255 255 / 10%);
+    --input: rgb(255 255 255 / 15%);
+    --ring: #5978f8;
+    --chart-1: #7b94f9;
+    --chart-2: #29c6ff;
+    --chart-3: #4ade80;
+    --chart-4: #fbbf24;
+    --chart-5: #f87171;
+    --sidebar: #0f172a;
+    --sidebar-foreground: #cbd5e1;
+    --sidebar-primary: #5978f8;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #1e293b;
+    --sidebar-accent-foreground: #a2b4fb;
+    --sidebar-border: rgb(255 255 255 / 10%);
+    --sidebar-ring: #5978f8;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+    }
+  html {
+    @apply font-sans;
+    }
+}
+/* Text ramp = Figma "Text/*" styles of 創紀後台 (Noto Sans TC). */
+@utility text-display { font-size: 30px; line-height: 36px; font-weight: 700; letter-spacing: -0.3px; }
+@utility text-h1 { font-size: 24px; line-height: 32px; font-weight: 700; letter-spacing: -0.2px; }
+@utility text-h2 { font-size: 20px; line-height: 28px; font-weight: 700; }
+@utility text-h3 { font-size: 16px; line-height: 24px; font-weight: 500; }
+@utility text-body { font-size: 14px; line-height: 20px; font-weight: 400; }
+@utility text-body-medium { font-size: 14px; line-height: 20px; font-weight: 500; }
+@utility text-small { font-size: 12px; line-height: 16px; font-weight: 400; }
+@utility text-small-medium { font-size: 12px; line-height: 16px; font-weight: 500; }
+@utility text-xs-tight { font-size: 11px; line-height: 14px; font-weight: 400; }

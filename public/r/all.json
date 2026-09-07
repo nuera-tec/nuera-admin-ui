@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "all",
+  "description": "Every nuera-ui component at once.",
+  "registryDependencies": [
+    "nuera-theme",
+    "button",
+    "badge",
+    "avatar",
+    "input",
+    "select",
+    "checkbox",
+    "switch",
+    "tabs",
+    "table",
+    "dropdown-menu",
+    "dialog",
+    "sheet",
+    "sonner",
+    "pagination",
+    "label",
+    "field",
+    "card",
+    "separator",
+    "tooltip",
+    "skeleton"
+  ],
+  "type": "registry:item"
+}

@@ -1,0 +1,154 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "nuera-theme",
+  "title": "Nuera theme",
+  "description": "創紀後台 tokens: colours (light/dark), radius, Noto Sans TC. Pull this before any component.",
+  "dependencies": [
+    "@fontsource-variable/noto-sans-tc",
+    "tw-animate-css"
+  ],
+  "cssVars": {
+    "theme": {
+      "font-sans": "'Noto Sans TC Variable', 'Noto Sans TC', system-ui, sans-serif"
+    },
+    "light": {
+      "background": "#f8fafc",
+      "foreground": "#0f172a",
+      "card": "#ffffff",
+      "card-foreground": "#0f172a",
+      "popover": "#ffffff",
+      "popover-foreground": "#0f172a",
+      "primary": "#3b61f7",
+      "primary-foreground": "#ffffff",
+      "primary-soft": "#f0f3fe",
+      "primary-soft-foreground": "#0a39f5",
+      "secondary": "#f1f5f9",
+      "secondary-foreground": "#0f172a",
+      "muted": "#f1f5f9",
+      "muted-foreground": "#64748b",
+      "accent": "#f1f5f9",
+      "accent-foreground": "#0f172a",
+      "destructive": "#dc2626",
+      "destructive-foreground": "#ffffff",
+      "destructive-soft": "#fef2f2",
+      "success": "#16a34a",
+      "success-soft": "#f0fdf4",
+      "warning": "#d97706",
+      "warning-soft": "#fffbeb",
+      "brand": "#00baef",
+      "brand-soft": "#f0fbff",
+      "link": "#3b61f7",
+      "border": "#e2e8f0",
+      "input": "#e2e8f0",
+      "ring": "#7b94f9",
+      "chart-1": "#3b61f7",
+      "chart-2": "#00baef",
+      "chart-3": "#22c55e",
+      "chart-4": "#f59e0b",
+      "chart-5": "#ef4444",
+      "radius": "0.625rem",
+      "sidebar": "#ffffff",
+      "sidebar-foreground": "#334155",
+      "sidebar-primary": "#3b61f7",
+      "sidebar-primary-foreground": "#ffffff",
+      "sidebar-accent": "#f0f3fe",
+      "sidebar-accent-foreground": "#0a39f5",
+      "sidebar-border": "#e2e8f0",
+      "sidebar-ring": "#7b94f9"
+    },
+    "dark": {
+      "background": "#020617",
+      "foreground": "#f8fafc",
+      "card": "#0f172a",
+      "card-foreground": "#f8fafc",
+      "popover": "#0f172a",
+      "popover-foreground": "#f8fafc",
+      "primary": "#5978f8",
+      "primary-foreground": "#ffffff",
+      "primary-soft": "#041762",
+      "primary-soft-foreground": "#a2b4fb",
+      "secondary": "#1e293b",
+      "secondary-foreground": "#f8fafc",
+      "muted": "#1e293b",
+      "muted-foreground": "#94a3b8",
+      "accent": "#1e293b",
+      "accent-foreground": "#f8fafc",
+      "destructive": "#ef4444",
+      "destructive-foreground": "#ffffff",
+      "destructive-soft": "#450a0a",
+      "success": "#22c55e",
+      "success-soft": "#14532d",
+      "warning": "#f59e0b",
+      "warning-soft": "#78350f",
+      "brand": "#29c6ff",
+      "brand-soft": "#005270",
+      "link": "#7b94f9",
+      "border": "rgb(255 255 255 / 10%)",
+      "input": "rgb(255 255 255 / 15%)",
+      "ring": "#5978f8",
+      "chart-1": "#7b94f9",
+      "chart-2": "#29c6ff",
+      "chart-3": "#4ade80",
+      "chart-4": "#fbbf24",
+      "chart-5": "#f87171",
+      "sidebar": "#0f172a",
+      "sidebar-foreground": "#cbd5e1",
+      "sidebar-primary": "#5978f8",
+      "sidebar-primary-foreground": "#ffffff",
+      "sidebar-accent": "#1e293b",
+      "sidebar-accent-foreground": "#a2b4fb",
+      "sidebar-border": "rgb(255 255 255 / 10%)",
+      "sidebar-ring": "#5978f8"
+    }
+  },
+  "css": {
+    "@utility text-display": {
+      "font-size": "30px",
+      "line-height": "36px",
+      "font-weight": "700",
+      "letter-spacing": "-0.3px"
+    },
+    "@utility text-h1": {
+      "font-size": "24px",
+      "line-height": "32px",
+      "font-weight": "700",
+      "letter-spacing": "-0.2px"
+    },
+    "@utility text-h2": {
+      "font-size": "20px",
+      "line-height": "28px",
+      "font-weight": "700"
+    },
+    "@utility text-h3": {
+      "font-size": "16px",
+      "line-height": "24px",
+      "font-weight": "500"
+    },
+    "@utility text-body": {
+      "font-size": "14px",
+      "line-height": "20px",
+      "font-weight": "400"
+    },
+    "@utility text-body-medium": {
+      "font-size": "14px",
+      "line-height": "20px",
+      "font-weight": "500"
+    },
+    "@utility text-small": {
+      "font-size": "12px",
+      "line-height": "16px",
+      "font-weight": "400"
+    },
+    "@utility text-small-medium": {
+      "font-size": "12px",
+      "line-height": "16px",
+      "font-weight": "500"
+    },
+    "@utility text-xs-tight": {
+      "font-size": "11px",
+      "line-height": "14px",
+      "font-weight": "400"
+    }
+  },
+  "type": "registry:theme"
+}
